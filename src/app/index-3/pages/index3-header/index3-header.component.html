@@ -1,0 +1,54 @@
+<header class="header-section">
+    <div class="container-fluid">
+        <div class="hrader-topbar d-lg-none d-md-block">
+            <div class="main-header-area">
+                <div class="row align-items-center justify-content-end">
+                    <div class="col-8">
+                        <a class="logo-three" routerLink="/index-3">
+                            <!-- <h4 class="text-dark">John Wick</h4> -->
+                            <img class="img-fluid" src="assets/img/logo/header-logo-1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-4 text-end">
+                        <div class="hamburger-menu text-end">
+                            <a href="javascript:void(0);">
+                                <span class="round-menu">
+                                    <span class="line"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-menu text-center d-none d-lg-inline-block" id="menu_wrap">
+            <div class="auhtor-info">
+                <h2>John Wick</h2>
+                <h4>Product Designer</h4>
+                <div class="author-avatar">
+                    <img class="w-100" src="assets/img/media/img-3.jpg" alt="author">
+                </div>
+            </div>
+            <div class="left-menu mt-30 mb-10">
+                <ul>
+                    <li class=""><a (click)="scroll('#'+ 'Home')">Home</a></li>
+                    <li class=""><a (click)="scroll('#'+ 'About')">About</a></li>
+                    <li class=""><a (click)="scroll('#'+ 'Services')">Services</a></li>
+                    <li class=""><a (click)="scroll('#'+ 'Portfolio')">Portfolio</a></li>
+                    <li class=""><a (click)="scroll('#'+ 'Blog')">Blog</a></li>
+                    <li class=""><a (click)="scroll('#'+ 'Contact')">Contact</a></li>
+                </ul>
+            </div>
+            <div class="bottom-section d-none d-xl-block">
+                <div class="social-media-3 mb-10">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="text-white">&#64;{{currantData}} Codebucks. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</header>

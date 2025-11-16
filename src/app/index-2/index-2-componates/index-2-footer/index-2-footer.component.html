@@ -1,0 +1,51 @@
+<footer class="black-bg footer-area-two">
+    <div class="footer-wrapper-one pt-75 pb-20">
+        <img src="assets/img/shape/star-5.png" alt="" class="shape-01">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 text-center">
+                    <div class="mb-60">
+                        <a class="d-block" routerLink="/"><img src="assets/img/logo/header-logo-2.png"
+                                alt="logo"></a>
+                    </div>
+                    <div class="social-media mb-60">
+                        <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+                        <a href="javascript:void(0)"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="footer-widget mb-30">
+                        <ul class="style-none">
+                            <li *ngFor="let item of menus">
+                                <a [routerLink]="item.link">{{item.lable}} </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area-two pt-50 pb-20">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7 order-md-last">
+                    <div class="copyright-text text-md-end text-center  mb-30">
+                        <p class="text-white">
+                            <a class="text-theme" href="#!">Codebucks</a>
+                            © {{currantYear}}, All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 text-md-start text-center">
+                    <div class="footer-menu mb-30">
+                        <ul class="style-none">
+                            <li *ngFor="let item of bottamFootersMenu">
+                                <a [routerLink]="item.link">{{item.lable}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

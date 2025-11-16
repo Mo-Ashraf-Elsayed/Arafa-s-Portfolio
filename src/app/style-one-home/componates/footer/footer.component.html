@@ -1,0 +1,56 @@
+<footer class="black-bg footer-area-one position-relative">
+    <div class="footer-wrapper-one pt-75 pb-20">
+        <img src="assets/img/shape/star-5.png" alt="" class="shape-01s">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-8">
+                    <div class="footer-widget mb-30">
+                        <p class="footer-desc">Phosflu orescently redefine cross the functional data through
+                            enabled mind
+                            share.ess
+                            products</p>
+                        <a class="chatbot" routerLink="contact">Let’s Chat <i class="bi bi-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4">
+                    <div class="footer-widget ps-xxl-5 ms-xxl-5 mb-30">
+                        <ul class="style-none">
+                            <li *ngFor="let item of menu">
+                                <a [routerLink]="item.link">{{item.lable}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="footer-widget mb-30 ms-xl-5 ps-xl-4">
+                        <a class="mail d-block mb-30" href="mailto:Qurifolio@example.com"><span class="text-theme">Qurifolio</span>&#64;example.com</a>
+                        <address>4517 Washington Ave. Manchester,
+                            Kentucky 39495</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area pt-50 pb-25">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-lg-6 text-lg-start text-center">
+                    <div class="copyright-text mb-30">
+                        <p>
+                            <a href="#!">Codebucks</a>
+                            © {{currantYear}}, All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 text-lg-end text-center">
+                    <div class="social-media mb-30">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

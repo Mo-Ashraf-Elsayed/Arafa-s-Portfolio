@@ -1,0 +1,62 @@
+<header class="theme-main-menu theme-menu-one pt-35 pb-30">
+    <div class="main-header-area" [class.sticky-menu]="isSticky">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-xl-3 col-lg-2 col-6">
+                    <div class="logo-area">
+                        <a class="black-logo" routerLink="/"><img src="assets/img/logo/header-logo-1.png" alt="Header-logo"></a>
+                        <a class="white-logo" routerLink="/"><img src="assets/img/logo/header-logo-2.png" alt="Header-logo"></a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7 col-6 d-none d-lg-block">
+                    <div class="main-menu d-none d-lg-block ps-xxl-5">
+                        <nav id="mobile-menu">
+                            <ul class="menu-list">
+                                <li *ngFor="let menuItem of menu">
+                                    <a [routerLink]="menuItem.link || '#'" routerLinkActive="active">
+                                        {{ menuItem.label }}
+                                    </a>
+                                    <ul *ngIf="menuItem.subItems" class="sub-menu" [ngClass]="{ 'mega-menu': menuItem.megaMenu }">
+                                        <li *ngFor="let subItem of menuItem.subItems">
+                                            <a [routerLink]="subItem.link || '#'" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                                                {{ subItem.label }}
+                                                <span *ngIf="subItem.subItems" class="float-end">
+                                                    <i class="bi bi-chevron-down"></i>
+                                                </span>
+                                            </a>
+                                            <ul *ngIf="subItem.subItems" class="sub-menu">
+                                                <li *ngFor="let nestedItem of subItem.subItems">
+                                                    <a [routerLink]="nestedItem.link || '#'" routerLinkActive="active">
+                                                        {{ nestedItem.label }}
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-6">
+                    <div class="right-nav d-flex align-items-center justify-content-end">
+                        <div class="quote__btn d-none d-sm-inline-block">
+                            <a href="#" class="ht_btn">Download CV</a>
+                        </div>
+                        <div class="search-area me-4 d-none">
+                            <a class="search_input" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                                <i class="bi bi-search"></i>
+                            </a>
+                        </div>
+                        <div class="hamburger-menu d-lg-none d-md-inline-block ms-3" (click)="openEnd()">
+                            <a class="round-menu" href="javascript:void(0);">
+                                <div class="line"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.theme-main-menu -->
+</header>
